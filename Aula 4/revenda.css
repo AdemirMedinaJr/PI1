@@ -1,0 +1,49 @@
+body {
+  background-color: azure;
+}
+
+/* imagem que é descendente de header com id="logo" */
+header img#logo {
+  display: none;   /* oculta a imagem */
+}
+
+article {
+  width: 100%;
+}
+
+/* imagem que é filha de article */
+article > img {
+  width: 60%;
+}
+
+/* media querys */
+/* para telas menores (ou com no máximo) 900px */
+/* deve-se seguir a ordem de maior para menor */
+@media screen and (max-width: 900px) {
+  body {
+    background-color: khaki;
+  }
+
+  header img#logo {
+    display: inline;  /* exibe a imagem */
+  }
+
+  header img#fusca {
+    display: none;   /* oculta a imagem */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: midnightblue;
+    color: aliceblue;
+  }
+
+  header img#logo {
+    display: none;  /* oculta a imagem */
+  }
+
+  header img#fusca {
+    display: none;   /* oculta a imagem */
+  }
+}

@@ -1,0 +1,17 @@
+.bg-cea {
+    background-color:white;
+  }
+  
+.fundo {
+  background-color: whitesmoke;
+  min-height: 600px;
+}
+
+.btn-custom {
+  border-radius: 50px;
+  align-content: center;
+}
+  
+.card {
+  border-radius: 20px;
+}

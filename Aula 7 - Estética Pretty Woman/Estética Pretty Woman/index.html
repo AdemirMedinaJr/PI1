@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Estética Pretty Woman</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md fundogradiente navbar-dark sticky-top">
+        <!-- Brand -->
+        <a class="navbar-brand titulo" href="#">
+            <img src="img/estetica.jpg" alt="logo" width="70">
+            Estética Pretty Woman
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#principal">Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tratamentos">Tratamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formulário">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!------HEADER------>
+    <header class="fundogradiente">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-sm-7 align-self-left">
+
+
+                    <!------CARROSSEL------>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!------ Indicators ------>
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!------ The slideshow ------>
+                        <div class="carousel-inner ig">
+                            <div class="carousel-item active">
+                                <h3>Ótima localização</h3>
+                                <p>Av. Ferreira Viana, 1526, Pelotas, RS</p>
+                                <img src="img/localizacao.jpg" class="img-fluid" alt="localização">
+                                <div class="carousel-caption text-white">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ig">
+                                <h3>Diversos procedimentos</h3>
+                                <p>Todo cuidado que você merece</p>
+                                <img src="img/esteticista.jpg" class="img-fluid" alt="esteticista">
+                                <div class="carousel-caption text-body">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item ig">
+                                <h3>Produtos Naturais</h3>
+                                <p>Conheça nossos produtos</p>
+                                <img src="img/produtos.jpg" class="img-fluid" alt="produtos">
+                                <div class="carousel-caption text-white">
+                                </div>
+                            </div>
+                        </div>
+                        <!------Fim do slideshow------>
+                    </div>
+                    <!------Fim do carrossel------>
+                </div>
+
+
+                <div class="col-sm-5" id="principal">
+                    <div class="col-sm-7 align-self-left">
+                        <div class="jumbotron bg-transparent text-white">
+                            <span class="btn btn-info sm-5"> Atendimento</span>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas rerum doloremque modi
+                                est nemo sit nihil quam minus earum adipisci!</p>
+                            <button class="btn btn-dark">
+                                Agende seu horário
+                            </button>
+                        </div>
+                    </div>
+                    <!------Fim da class col-sm-5------>
+                </div>
+            </div>
+    </header>
+
+    <!--------Tratamentos de beleza-------->
+    <div class="container mt-5" id="tratamentos">
+        <h2>Tratamentos de beleza e estético</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="btn btn-info">BELEZA</div>
+                <div class="card">
+                    <img class="card-img-top" src="img/manicure.jpg" alt="manicure">
+                    <div class="card-body">
+                        <h4 class="card-title">Manicure</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                            repudiandae magni laudantium ex rem repellat!</p>
+                        <p>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </p>
+                        <p style="font-size:10px; color:darkgray">
+                            <i class="fas fa-user-friends"></i> Rosane
+                            <i class="far fa-clock"></i> 30 min
+                            <i class="fas fa-calendar-day"></i> Seg. a Sáb.
+                        </p>
+                        <a href="#" class="btn btn-primary btn-danger btn-block">Agende seu horário</a>
+                    </div>
+                </div>
+            </div>
+            <!------Fim da div col-md-3------>
+
+
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="btn btn-info">BELEZA</div>
+                <div class="card">
+                    <img class="card-img-top" src="img/pedicure.jpg" alt="pedicure">
+                    <div class="card-body">
+                        <h4 class="card-title">Pedicure</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                            repudiandae magni laudantium ex rem repellat!</p>
+                        <p>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </p>
+                        <p style="font-size:10px; color:darkgray">
+                            <i class="fas fa-user-friends"></i> Amanda
+                            <i class="far fa-clock"></i> 30 min
+                            <i class="fas fa-calendar-day"></i> Seg. a Sáb.
+                        </p>
+                        <a href="#" class="btn btn-primary btn-danger btn-block">Agende seu horário</a>
+                    </div>
+                </div>
+            </div>
+            <!------Fim da div col-md-3------>
+
+
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="btn btn-info">PROCEDIMENTO</div>
+                <div class="card">
+                    <img class="card-img-top" src="img/limpezadepele.jpg" alt="limpeza de pele">
+                    <div class="card-body">
+                        <h4 class="card-title">Limpeza de pele</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                            repudiandae magni laudantium ex rem repellat!</p>
+                        <p>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </p>
+                        <p style="font-size:10px; color:darkgray">
+                            <i class="fas fa-user-friends"></i> Ângela
+                            <i class="far fa-clock"></i> 1:00 hora
+                            <i class="fas fa-calendar-day"></i> Seg. a Sex.
+                        </p>
+                        <a href="#" class="btn btn-primary btn-danger btn-block">Agende seu horário</a>
+                    </div>
+                </div>
+            </div>
+            <!------Fim da div col-md-3------>
+
+
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="btn btn-info">PROCEDIMENTO</div>
+                <div class="card">
+                    <img class="card-img-top" src="img/peeling.jpg" alt="peeling">
+                    <div class="card-body">
+                        <h4 class="card-title">Peeling</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                            repudiandae magni laudantium ex rem repellat!</p>
+                        <p>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </p>
+                        <p style="font-size:10px; color:darkgray">
+                            <i class="fas fa-user-friends"></i> Ana
+                            <i class="far fa-clock"></i> 1:00 hora
+                            <i class="fas fa-calendar-day"></i> Seg. a Sex.
+                        </p>
+                        <a href="#" class="btn btn-primary btn-danger btn-block">Agende seu horário</a>
+                    </div>
+                </div>
+            </div>
+            <!------Fim da div col-md-3------>
+
+            <!------Formulário------>
+            <div class="container mt-5" id="formulário">
+                <h4>Faça o seu cadastro</h4>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="nome" class="form-control" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="telefone" class="form-control" id="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="endereço">Endereço:</label>
+                        <input type="endereço" class="form-control" id="endereço">
+                    </div>
+                    <button type="enviar" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+            <!------Páginas utilizadas nesta aula----
+https://www.online-image-editor.com/ 
+https://cssgradient.io/gradient-backgrounds/
+-->
+
+
+</body>
+
+
+</html>

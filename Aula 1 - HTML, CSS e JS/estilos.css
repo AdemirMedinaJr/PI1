@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  color: blue;
+}
+
+.voltar {
+  text-align: right;
+}
+
+.menu {
+  background-color: lightcyan;
+  list-style: none;
+  text-align: right;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+ padding: 10px 20px;
+ display: inline-block;
+ text-decoration: none; 
+}
+
+.menu li a:hover {
+  background-color: aqua;
+  color: blueviolet;
+}
+
+table {
+  width: 60%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-child(even) {
+  background-color: gold;
+}

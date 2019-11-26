@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows: auto auto auto;
+}
+
+header {
+  background-color: aquamarine;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+footer {
+  background-color: burlywood;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+nav {
+  background-color: goldenrod;
+  /* pode-se indicar a coluna e linha da grid */
+  grid-column: 3;
+  grid-row: 2;
+}
+
+article {
+  background-color: antiquewhite;
+}
+
+aside {
+  background-color: lightcyan;
+  grid-column: 1;
+  grid-row: 2;
+}

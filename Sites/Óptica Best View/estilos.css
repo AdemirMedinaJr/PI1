@@ -1,0 +1,104 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 50;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #ededed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: inline-block;
+    background-color: #ededed;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #ededed;
+
+}
+
+/* hover: quando o usuário passa o mouse sobre o item */
+nav ul li a:hover {
+    background-color: #d6d6d6;
+    color: #6d6d6d;
+    border-bottom: 3px solid #151515;
+}
+
+ article h2 {
+    color: #424242;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    float: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+header, article {
+    margin: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    /*centraliza a tabela*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+th, td {
+    padding: 20px;
+
+}
+
+thead tr {
+    border-bottom: solid 2px #BDBDBD
+}
+
+tbody tr:hover {
+background-color: #0B89B1;
+
+}
+
+tfoot {
+    background-color: #6d6d6d;
+    color: beige;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer {
+    color: #086A87;
+}
+
+h1 {
+    color: #0489B1;
+}
+
+fieldset {
+    background-color: darkcyan;
+}
+
+fieldset, legend {
+    margin: 40px;
+
+}
+

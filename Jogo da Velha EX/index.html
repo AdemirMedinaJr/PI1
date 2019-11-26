@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Jogo da velha</title>
+
+    <style>
+        /* trata do estilo adotado nos cards */
+        .card {
+            height: 140px;
+            border-radius: 10px;
+            border-top: 4px solid black;
+            border-bottom: 4px solid #151515;
+            border-left: 4px solid #151515;
+            border-right: 4px solid #151515;
+        }
+
+        /* efeito azul/vermelho gradient no background do body */
+        .fundo {
+            background: linear-gradient(to bottom, #0033cc 0%, #800000 100%);
+        }
+
+        .navbar {
+            box-shadow: 2px 4px 5px #f00;
+            margin-bottom: 4px;
+            opacity: 0.9;
+        }
+
+        /* efeito azul/vermelho gradient no background do footer */
+        .footer {
+            background: linear-gradient(to bottom, #800000 0%, #0033cc 100%);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!---- NAVBAR ---->
+    <section class="fundo">
+        <nav class="navbar bg-light text-dark py-2 justify-content-center"
+            style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+            <!-- img src="img/logo2.png" alt="Jogo da velha" width="75px" class="float-right mx-1" -->
+            <h1>Jogo da Velha (TIC TAC TOE)</h1>
+        </nav>
+
+        <!---- CARD-DECK - PLAYERS ---->
+        <!-- identificação do player / storage de vitórias feito com os cards orientados ao centro da página -->
+        <!-- ícones do fontawesome utilizados ao fim do input (append) -->
+        <div class="container">
+            <div class="col-6 py-4 mx-auto">
+                <div class="card-deck">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <form>
+                                <div class="input-group mb-2">
+                                    <input type="text" class="form-control font-weight-bolder" style="font-size:18px"
+                                        placeholder="Player 1">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-times"></i></span>
+                                    </div>
+                                </div>
+                            </form>
+                            <textarea class="form-control" id="sel1" style="min-height:19px; padding:0;"></textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">
+                            <form>
+                                <div class="input-group mb-2">
+                                    <input type="text" class="form-control font-weight-bolder" style="font-size:18px"
+                                        placeholder="Player 2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="far fa-circle"></i></span>
+                                    </div>
+                                </div>
+                            </form>
+                            <textarea class="form-control" id="sel2" style="min-height:19px; padding:0;"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim da classe card-deck -->
+            </div>
+        </div>
+
+        <!---- CARD-COLUMNS - TABULEIRO ---->
+        <!-- responsável por dar forma ao tabuleiro do jogo -->
+        <!-- "outqX" vinculado a "saiX", indicando em que card do tabuleiro será feita a jogada -->
+        <div class="col-4 mx-auto mt-1 px-3 py-0">
+            <div class="card-columns">
+                <div id="outq1" class="card bg-light">
+                    <div id="sai1" class="card-body text-center text-dark" style="font-size:60px">
+                    </div>
+                </div>
+                <div id="outq2" class="card bg-light">
+                    <div id="sai2" class="card-body text-center text-dark" style="font-size:60px">
+                    </div>
+                </div>
+                <div id="outq3" class="card bg-light">
+                    <div id="sai3" class="card-body text-center text-dark" style="font-size:60px">
+                    </div>
+                </div>
+                <div id="outq4" class="card bg-light p">
+                    <div id="sai4" class="card-body text-center text-dark" style="font-size:60px">
+                    </div>
+                </div>
+                <div id="outq5" class="card bg-light">
+                    <div id="sai5" class="card-body text-center text-dark" style="font-size:60px">
+                    </div>
+                </div>
+                <div id="outq6" class="card bg-light">
+                    <div id="sai6" class="card-body text-center text-dark" style="font-size:60px">
+                    </div>
+                </div>
+                <div id="outq7" class="card bg-light">
+                    <div class="card-body text-center text-dark" style="font-size:60px">
+                        <p id="sai7" class="card-text" name="escolherPosicaoTabuleiro(2,0)" checked>
+                        </p>
+                    </div>
+                </div>
+                <div id="outq8" class="card bg-light">
+                    <div class="card-body text-center text-dark" style="font-size:60px">
+                        <p id="sai8" class="card-text" name="escolherPosicaoTabuleiro(2,1)" checked>
+                        </p>
+                    </div>
+                </div>
+                <div id="outq9" class="card bg-light">
+                    <div class="card-body text-center text-dark" style="font-size:60px">
+                        <p id="sai9" class="card-text" name="escolherPosicaoTabuleiro(2,2)" checked>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- fim da classe card-columns -->
+        </div>
+
+    </section>
+
+    <!---- FOOTER ---->
+    <footer class="footer mt-6 py-3">
+        <div class="container">
+            <p class="text-center text-light my-4" style="font-size: 25px">
+                <i>Trabalho de Programação para Internet I</i> <br>
+                <i>Professor Edécio Iepsen</i>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/jogo.js"></script>
+    <!-- links para bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

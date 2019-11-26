@@ -1,0 +1,37 @@
+body {
+    margin: 10;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  h2 {
+    color: burlywood;
+  }
+  
+  .voltar {
+    text-align: right;
+  }
+  
+  .menu {
+    background-color: wheat;
+    list-style: none;
+    text-align: right;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+   padding: 10px 20px;
+   display: inline-block;
+   text-decoration: none; 
+  }
+  
+  .menu li a:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+  }
+
+  
+  

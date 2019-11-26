@@ -1,0 +1,83 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0
+}
+
+nav ul {
+    list-style: none;
+    background-color: #ededed;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px;
+    display: inline-block;
+    background-color: #ededed;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 3px solid #ededed;
+
+}
+
+/* hover: quando o usuário passa o mouse sobre o item */
+nav ul li a:hover {
+    background-color: #d6d6d6;
+    color: #6d6d6d;
+    border-bottom: 3px solid #f00;
+}
+
+ article h2 {
+    color: #f00;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+img {
+    width: 350px;
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+header, article {
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    /*centraliza a tabela*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+th, td {
+    padding: 10px;
+
+}
+
+thead tr {
+    border-bottom: solid 3px #f00
+}
+
+tbody tr:hover {
+background-color: coral;
+
+}
+
+tfoot {
+    background-color: #6d6d6d;
+    color: beige;
+    font-style: italic;
+    font-weight: bold;
+}

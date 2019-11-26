@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="img/logo.png" />
+  <title>Lancheria Avenida</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <!-- QUADRO SUPERIOR: EMPRESA -->
+    <div class="row bg-primary text-white my-1">
+      <div class="col-sm-12">
+        <img src="img/logo.png" alt="Logo Lancheria" width="120" class="float-left mt-0 mr-3">
+        <h1>Lancheria Avenida - O melhor lanche da cidade</h1>
+        <h2>Venha nos visitar</h2>
+      </div>
+    </div>
+
+    <!-- QUADRO CENTRAL: LANCHES -->
+    <div class="row mx-2 mt-4 text-primary bg-light ">
+      <div class="col-sm-3">
+        <h3>Confira nosso cardápio</h3>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="lanche" checked id="rbhamburger">Hamburger
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="lanche" id="rbtorrada">Torrada
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="lanche" id="rbcachorroquente">Cachorro Quente
+          </label>
+        </div>
+      </div>
+      
+      <div class="col-sm-5">
+        <img src="img/hamburger.png" alt="Foto Lanche" class="img-fluid" id="imglanche">
+      </div>
+      <div class="col-sm-4">
+        <h4>Adicionais:</h4>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="ckovo">Ovo
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="ckbacon">Bacon
+          </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" id="ckcebola">Cebola
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" id="ckmaioneseextra">Maionese extra
+            </label>
+          </div>
+      </div>
+    </div>
+    
+
+    <!-- QUADRO INFERIOR: PREÇO -->
+    <div class="row bg-primary text-white py-4 my-1">
+      <div class="col-sm-12">
+        <h3>Preço do lanche
+           <span id="outpreco" style="font-size: 30px">R$ 19.80</span>
+      </div>
+    </div>
+
+  </div>
+
+<script src="js/Lancheria Avenida.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.card-deck {
+    min-height: 480px;
+}
+
+.heart {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 50px;
+}
+
